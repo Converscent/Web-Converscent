@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Converscent Agents Conversationnels IA sur mesure</title>
+<meta name="description" content="Converscent conçoit des agents conversationnels intelligents, entièrement calibrés pour votre activité."/>
+<link rel="stylesheet" href="style.css"/>
+<style>
+/* Hero */
+.hero { min-height: calc(100vh - 64px); display: flex; flex-direction: column; justify-content: center; padding: 80px 40px 56px; max-width: 1080px; margin: 0 auto; }
+.hero h1 { max-width: 760px; margin-bottom: 22px; }
+.hero h1 em { font-style: normal; color: var(--accent); }
+.hero-desc { max-width: 500px; font-size: 0.97rem; margin-bottom: 38px; }
+.hero-btns { display: flex; gap: 12px; flex-wrap: wrap; }
+
+/* Stats bar */
+.stats { display: grid; grid-template-columns: repeat(3,1fr); gap: 1px; background: var(--border); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); margin-top: 64px; }
+.stat { background: var(--bg); padding: 32px 28px; }
+.stat-val { font-family: 'Syne', sans-serif; font-size: 2rem; font-weight: 800; color: var(--accent); letter-spacing: -0.05em; margin-bottom: 5px; }
+.stat-label { font-size: 0.78rem; color: var(--muted); font-weight: 500; }
+
+/* Why grid */
+.why-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 14px; margin-top: 44px; }
+.why-card { background: var(--bg2); border: 1px solid var(--border); border-radius: var(--r-lg); padding: 26px; transition: border-color var(--ease), transform var(--ease); }
+.why-card:hover { border-color: var(--border-h); transform: translateY(-3px); }
+.why-icon { font-size: 1.6rem; margin-bottom: 14px; display: block; }
+.why-card h3 { font-size: 0.95rem; margin-bottom: 8px; }
+.why-card p { font-size: 0.83rem; }
+
+/* CTA band */
+.cta-band { text-align: center; padding: 80px 20px; max-width: 640px; margin: 0 auto; }
+.cta-band h2 { margin-bottom: 14px; }
+.cta-band p { margin-bottom: 30px; }
+
+@media(max-width:768px){
+  .hero{padding:60px 20px 40px;}
+  .stats{grid-template-columns:1fr;}
+  .why-grid{grid-template-columns:1fr;}
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a class="nav-logo" href="index.html">
+    <img src="https://converscent.github.io/Converscent/Logo_Converscent.png" alt="logo"/>
+    Converscent
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html"    data-p="index.html">01 Accueil</a></li>
+    <li><a href="services.html" data-p="services.html">02 Services</a></li>
+    <li><a href="portfolio.html" data-p="portfolio.html">03 Portfolio</a></li>
+    <li><a href="contact.html"  data-p="contact.html">04 Contact</a></li>
+    <li><a href="a-propos.html" data-p="a-propos.html">05 À propos</a></li>
+  </ul>
+  <div class="nav-cta-wrap"><a href="contact.html" class="btn-nav">Démarrer un projet</a></div>
+  <button class="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+
+<main>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="badge"><span class="dot"></span>Disponible pour de nouveaux projets</div>
+  <h1>Agents IA Conversationnels<br><em>sur mesure.</em></h1>
+  <p class="hero-desc">Converscent conçoit des agents conversationnels intelligents, entièrement calibrés pour votre activité. Automatisez votre relation client, qualifiez vos prospects et réduisez votre charge opérationnelle sans compromis.</p>
+  <div class="hero-btns">
+    <a href="contact.html"   class="btn btn-primary">Lancer votre projet →</a>
+    <a href="portfolio.html" class="btn btn-ghost">Voir mes réalisations →</a>
+  </div>
+  <div class="stats">
+    <div class="stat"><div class="stat-val">100%</div><div class="stat-label">Sur mesure</div></div>
+    <div class="stat"><div class="stat-val">IA</div><div class="stat-label">Optimisé &amp; calibré</div></div>
+    <div class="stat"><div class="stat-val">24/7</div><div class="stat-label">Déployé sur votre site</div></div>
+  </div>
+</div>
+
+<!-- TICKER -->
+<div class="ticker-wrap">
+  <div class="ticker-track">
+    <span class="ticker-item">Relation Client IA</span><span class="ticker-item">Agent Conversationnel</span><span class="ticker-item">Planification Intelligente</span><span class="ticker-item">Botpress</span><span class="ticker-item">Intégration Web</span><span class="ticker-item">Réponse Automatisée</span><span class="ticker-item">Architecture IA</span><span class="ticker-item">Expérience Client</span>
+    <span class="ticker-item">Relation Client IA</span><span class="ticker-item">Agent Conversationnel</span><span class="ticker-item">Planification Intelligente</span><span class="ticker-item">Botpress</span><span class="ticker-item">Intégration Web</span><span class="ticker-item">Réponse Automatisée</span><span class="ticker-item">Architecture IA</span><span class="ticker-item">Expérience Client</span>
+  </div>
+</div>
+
+<!-- WHY -->
+<section class="section">
+  <p class="label">Pourquoi un agent IA ?</p>
+  <h2>Vos clients attendent<br>une réponse immédiate.</h2>
+  <p style="max-width:500px;margin-top:14px;">Vos clients attendent des réponses immédiates, personnalisées, à toute heure. Un agent conversationnel IA transforme chaque interaction en opportunité, sans alourdir vos équipes.</p>
+  <div class="why-grid">
+    <div class="why-card"><span class="why-icon">🕐</span><h3>Disponibilité permanente</h3><p>Votre agent répond à vos clients 24h/24, 7j/7, sans interruption ni délai d'attente.</p></div>
+    <div class="why-card"><span class="why-icon">⚡</span><h3>Réponse instantanée</h3><p>Chaque question reçoit une réponse en moins d'une seconde, peu importe le volume de demandes.</p></div>
+    <div class="why-card"><span class="why-icon">🎯</span><h3>Qualification automatique</h3><p>L'agent identifie et qualifie vos prospects avant de les orienter vers vos équipes commerciales.</p></div>
+    <div class="why-card"><span class="why-icon">📉</span><h3>Charge opérationnelle réduite</h3><p>Automatisez les demandes répétitives et libérez vos équipes pour les tâches à forte valeur ajoutée.</p></div>
+    <div class="why-card"><span class="why-icon">💰</span><h3>Économies immédiates</h3><p>Réduisez vos coûts de support client tout en maintenant un niveau de service exceptionnel.</p></div>
+    <div class="why-card"><span class="why-icon">🔧</span><h3>Entièrement sur mesure</h3><p>Chaque agent est conçu spécifiquement pour votre activité, votre ton et vos objectifs.</p></div>
+  </div>
+</section>
+
+<hr/>
+
+<!-- CTA -->
+<div class="cta-band">
+  <h2>Prêt à transformer votre relation client ?</h2>
+  <p>Discutons de votre projet. Chaque agent est unique la conversation commence ici.</p>
+  <a href="contact.html" class="btn btn-primary">Discuter de votre projet →</a>
+</div>
+
+</main>
+
+<hr/>
+<footer class="footer">
+  <a class="footer-logo" href="index.html">
+    <img src="https://converscent.github.io/Converscent/Logo_Converscent.png" alt="logo"/>
+    Converscent
+  </a>
+  <span class="footer-copy">© 2025 Tous droits réservés</span>
+</footer>
+
+<script src="nav.js"></script>
+</body>
+</html>

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Services Converscent</title>
+<meta name="description" content="Découvrez l'Assistant Support de Converscent tarifs, fonctionnalités et méthodologie."/>
+<link rel="stylesheet" href="style.css"/>
+<style>
+/* Page hero */
+.page-hero { padding: 80px 40px 56px; max-width: 1080px; margin: 0 auto; }
+
+/* Agent spotlight */
+.agent-spotlight {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: var(--r-lg);
+  padding: 48px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: start;
+  margin-top: 36px;
+}
+.agent-emoji { font-size: 2.8rem; display: block; margin-bottom: 18px; }
+.agent-tags { display: flex; flex-wrap: wrap; gap: 7px; margin: 16px 0 26px; }
+.agent-tag {
+  font-size: 0.7rem; font-weight: 600;
+  color: var(--accent);
+  background: var(--accent-bg);
+  border: 1px solid var(--accent-br);
+  padding: 4px 12px; border-radius: 100px;
+}
+.agent-btns { display: flex; gap: 10px; flex-wrap: wrap; }
+
+/* Feature list */
+.feat-list { display: flex; flex-direction: column; gap: 10px; }
+.feat-item {
+  display: flex; align-items: flex-start; gap: 12px;
+  padding: 15px; background: var(--bg3);
+  border: 1px solid var(--border); border-radius: var(--r);
+}
+.feat-dot { width: 7px; height: 7px; background: var(--accent); border-radius: 50%; margin-top: 4px; flex-shrink: 0; }
+.feat-item p { font-size: 0.83rem; color: var(--text); margin: 0; }
+
+/* Methodology */
+.steps { border: 1px solid var(--border); border-radius: var(--r-lg); overflow: hidden; margin-top: 40px; }
+.step { display: grid; grid-template-columns: 72px 1fr; border-bottom: 1px solid var(--border); }
+.step:last-child { border-bottom: none; }
+.step-n { background: var(--bg3); border-right: 1px solid var(--border); display: flex; align-items: center; justify-content: center; font-family: 'Syne',sans-serif; font-size: 0.7rem; font-weight: 700; color: var(--dim); letter-spacing: .04em; min-height: 80px; }
+.step-body { padding: 24px 30px; }
+.step-body h3 { margin-bottom: 6px; font-size: 0.95rem; }
+.step-body p { font-size: 0.82rem; }
+
+/* CTA row */
+.cta-row { text-align: center; padding: 72px 20px; }
+.cta-row h2 { margin-bottom: 28px; }
+
+@media(max-width:768px){
+  .page-hero{padding:60px 20px 40px;}
+  .agent-spotlight{grid-template-columns:1fr;padding:28px;}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <a class="nav-logo" href="index.html">
+    <img src="https://converscent.github.io/Converscent/Logo_Converscent.png" alt="logo"/>
+    Converscent
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html"    data-p="index.html">01 Accueil</a></li>
+    <li><a href="services.html" data-p="services.html">02 Services</a></li>
+    <li><a href="portfolio.html" data-p="portfolio.html">03 Portfolio</a></li>
+    <li><a href="contact.html"  data-p="contact.html">04 Contact</a></li>
+    <li><a href="a-propos.html" data-p="a-propos.html">05 À propos</a></li>
+  </ul>
+  <div class="nav-cta-wrap"><a href="contact.html" class="btn-nav">Démarrer un projet</a></div>
+  <button class="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+
+<main>
+
+<!-- HERO -->
+<div class="page-hero">
+  <div class="badge"><span class="dot"></span>02 Services</div>
+  <h1>L'Assistant Support,<br>taillé pour vous.</h1>
+  <p style="max-width:520px;margin-top:14px;font-size:0.97rem;">Un agent conversationnel intelligent, entièrement calibré sur votre base de connaissance. Il répond, oriente et convertit à votre place.</p>
+</div>
+
+<!-- AGENT SPOTLIGHT -->
+<div class="wrap" style="padding-bottom:0">
+  <div class="agent-spotlight">
+    <div>
+      <span class="agent-emoji">💬</span>
+      <p class="label">Notre agent</p>
+      <h2 style="font-size:1.7rem;">Assistant Support</h2>
+      <p style="margin-top:10px;">Votre service client, automatisé à 100%. Un agent conversationnel intelligent déployé directement sur votre site. Il répond, oriente et convertit vos visiteurs 24h/24, avec la précision d'un expert formé sur votre activité.</p>
+      <div class="agent-tags">
+        <span class="agent-tag">Réponses contextuelles</span>
+        <span class="agent-tag">Orientation intelligente</span>
+        <span class="agent-tag">Réponses rapides</span>
+        <span class="agent-tag">Disponible 24h/24</span>
+      </div>
+      <div class="agent-btns">
+        <a href="agent-support.html" class="btn btn-ghost">Découvrir en détail →</a>
+        <a href="contact.html"       class="btn btn-primary">Demander un devis →</a>
+      </div>
+    </div>
+    <div class="feat-list">
+      <div class="feat-item"><div class="feat-dot"></div><p>Répond aux questions fréquentes en moins d'une seconde</p></div>
+      <div class="feat-item"><div class="feat-dot"></div><p>Base de connaissance entièrement personnalisée sur votre activité</p></div>
+      <div class="feat-item"><div class="feat-dot"></div><p>Oriente les cas complexes vers vos équipes humaines</p></div>
+      <div class="feat-item"><div class="feat-dot"></div><p>S'intègre directement sur votre site web existant</p></div>
+      <div class="feat-item"><div class="feat-dot"></div><p>Mémorise le contexte de la conversation pour des réponses cohérentes</p></div>
+      <div style="display:flex;gap:8px;flex-wrap:wrap;padding-top:4px;">
+        <a href="agent-support.html" class="btn btn-ghost" style="font-size:.78rem;padding:8px 14px;">Voir tous les détails →</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr style="margin-top:72px;"/>
+
+<!-- TARIFS -->
+<section class="section">
+  <p class="label">Tarifs</p>
+  <h2>Choisissez votre formule.</h2>
+  <div class="pricing-grid">
+
+    <!-- Starter -->
+    <div class="pricing-card">
+      <span class="p-icon">🚀</span>
+      <div class="p-name">Pack Starter</div>
+      <div class="p-sub">Paiement unique</div>
+      <div class="p-price">199€</div>
+      <div class="p-freq">Une seule fois, sans abonnement</div>
+      <ul class="p-list">
+        <li>Conception sur mesure</li>
+        <li>Base de connaissance personnalisée</li>
+        <li>Intégration sur votre site</li>
+        <li>6 mois de maintenance incluse</li>
+        <li class="no">Modifications illimitées</li>
+        <li class="no">Gestion des clés API</li>
+        <li class="no">Maintenance continue</li>
+      </ul>
+      <a href="contact.html" class="btn btn-ghost" style="width:100%;justify-content:center;">Choisir ce pack →</a>
+    </div>
+
+    <!-- Premium -->
+    <div class="pricing-card hot">
+      <span class="hot-badge">⭐ Recommandé</span>
+      <span class="p-icon">⭐</span>
+      <div class="p-name">Pack Premium</div>
+      <div class="p-sub">Starter + abonnement mensuel</div>
+      <div class="p-price">199€ <small>+ 39€/mois</small></div>
+      <div class="p-freq">Tout inclus, sans surprise</div>
+      <ul class="p-list">
+        <li>Tout le Pack Starter</li>
+        <li>Modifications illimitées</li>
+        <li>Gestion complète des clés API</li>
+        <li>Maintenance continue</li>
+        <li>Suivi de performance mensuel</li>
+        <li>Évolutions prioritaires</li>
+        <li>Support dédié</li>
+      </ul>
+      <p class="p-note">⚠ Les coûts des IA restent à votre charge</p>
+      <a href="contact.html" class="btn btn-primary" style="width:100%;justify-content:center;">Choisir ce pack →</a>
+    </div>
+
+  </div>
+</section>
+
+<hr/>
+
+<!-- METHODOLOGY -->
+<section class="section">
+  <p class="label">Méthodologie</p>
+  <h2>Un processus clair, de A à Z.</h2>
+  <div class="steps">
+    <div class="step">
+      <div class="step-n">01</div>
+      <div class="step-body"><h3>Audit &amp; cadrage</h3><p>Analyse de votre activité, identification des besoins et définition des objectifs de l'agent.</p></div>
+    </div>
+    <div class="step">
+      <div class="step-n">02</div>
+      <div class="step-body"><h3>Architecture conversationnelle</h3><p>Conception des flux de dialogue, structuration de la base de connaissance.</p></div>
+    </div>
+    <div class="step">
+      <div class="step-n">03</div>
+      <div class="step-body"><h3>Développement &amp; calibration</h3><p>Construction de l'agent, test et affinage des réponses selon vos retours.</p></div>
+    </div>
+    <div class="step">
+      <div class="step-n">04</div>
+      <div class="step-body"><h3>Déploiement &amp; accompagnement</h3><p>Mise en ligne sur votre site et suivi post-déploiement pour garantir les performances.</p></div>
+    </div>
+  </div>
+</section>
+
+<hr/>
+
+<!-- FORMULAIRE MODIFICATION -->
+<section class="section">
+  <p class="label">Pack Starter</p>
+  <h2>Demander une modification.</h2>
+  <p style="margin-top:10px;">Vous disposez du Pack Starter et souhaitez une modification de votre agent ? Remplissez ce formulaire.</p>
+  <div class="form-wrap">
+    <form>
+      <div class="form-group"><label>Nom d'entreprise</label><input type="text" placeholder="Votre entreprise"/></div>
+      <div class="form-group"><label>Contact (email ou téléphone)</label><input type="text" placeholder="contact@entreprise.com"/></div>
+      <div class="form-group"><label>Agent concerné</label>
+        <select><option value="">Sélectionnez</option><option>Assistant Support</option></select>
+      </div>
+      <div class="form-group"><label>Pack souscrit</label>
+        <select><option value="">Sélectionnez</option><option>Starter</option><option>Premium</option></select>
+      </div>
+      <div class="form-group"><label>Description de la modification</label><textarea placeholder="Décrivez la modification souhaitée..."></textarea></div>
+      <button type="submit" class="btn btn-primary">Envoyer la demande →</button>
+      <p class="form-note">Vous serez recontacté sous 48h.</p>
+    </form>
+  </div>
+</section>
+
+<!-- CTA -->
+<hr/>
+<div class="cta-row">
+  <h2>Prêt à transformer votre relation client ?</h2>
+  <a href="contact.html" class="btn btn-primary">Nous contacter →</a>
+</div>
+
+</main>
+
+<hr/>
+<footer class="footer">
+  <a class="footer-logo" href="index.html">
+    <img src="https://converscent.github.io/Converscent/Logo_Converscent.png" alt="logo"/>
+    Converscent
+  </a>
+  <span class="footer-copy">© 2025 Tous droits réservés</span>
+</footer>
+
+<script src="nav.js"></script>
+</body>
+</html>

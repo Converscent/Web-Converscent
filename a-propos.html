@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>À propos Converscent</title>
+<meta name="description" content="Qui est Converscent ? Un lycéen passionné par l'IA conversationnelle, créateur d'agents sur mesure."/>
+<link rel="stylesheet" href="style.css"/>
+<style>
+.page-hero { padding: 80px 40px 56px; max-width: 1080px; margin: 0 auto; }
+
+/* Intro layout */
+.intro-layout { display: grid; grid-template-columns: 1.4fr 1fr; gap: 40px; align-items: start; margin-top: 40px; }
+.intro-text { }
+.intro-text p { margin-bottom: 16px; font-size: 0.95rem; }
+
+/* Skills sidebar */
+.skills-box { background: var(--bg2); border: 1px solid var(--border); border-radius: var(--r-lg); padding: 28px; }
+.skills-box h4 { margin-bottom: 14px; }
+.skill-tags { display: flex; flex-wrap: wrap; gap: 7px; margin-bottom: 24px; }
+.skill-tag { background: var(--bg3); border: 1px solid var(--border); border-radius: 8px; padding: 6px 12px; font-size: 0.78rem; color: var(--text); font-weight: 500; }
+.skill-list { list-style: none; display: flex; flex-direction: column; gap: 8px; }
+.skill-list li { font-size: 0.82rem; color: var(--muted); display: flex; align-items: center; gap: 8px; }
+.skill-list li::before { content: '→'; color: var(--accent); font-weight: 700; flex-shrink: 0; }
+
+/* Story cards */
+.story-grid { display: flex; flex-direction: column; gap: 0; margin-top: 40px; border: 1px solid var(--border); border-radius: var(--r-lg); overflow: hidden; }
+.story-item { display: grid; grid-template-columns: 160px 1fr; border-bottom: 1px solid var(--border); }
+.story-item:last-child { border-bottom: none; }
+.story-label { background: var(--bg3); border-right: 1px solid var(--border); padding: 28px; display: flex; flex-direction: column; justify-content: center; }
+.story-num { font-family: 'Syne', sans-serif; font-size: 0.68rem; font-weight: 700; color: var(--accent); letter-spacing: .07em; margin-bottom: 4px; }
+.story-cat { font-size: 0.72rem; color: var(--dim); }
+.story-body { padding: 28px 32px; }
+.story-body h3 { margin-bottom: 10px; }
+.story-body p { font-size: 0.85rem; }
+
+/* Legal */
+.legal-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 36px; }
+.legal-card { background: var(--bg2); border: 1px solid var(--border); border-radius: var(--r-lg); padding: 28px; }
+.legal-card h4 { margin-bottom: 10px; }
+.legal-card p { font-size: 0.82rem; }
+
+@media(max-width:768px){
+  .page-hero{padding:60px 20px 40px;}
+  .intro-layout{grid-template-columns:1fr;}
+  .story-item{grid-template-columns:1fr;flex-direction:column;}
+  .story-label{border-right:none;border-bottom:1px solid var(--border);}
+  .legal-grid{grid-template-columns:1fr;}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <a class="nav-logo" href="index.html">
+    <img src="https://converscent.github.io/Converscent/Logo_Converscent.png" alt="logo"/>
+    Converscent
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html"    data-p="index.html">01 Accueil</a></li>
+    <li><a href="services.html" data-p="services.html">02 Services</a></li>
+    <li><a href="portfolio.html" data-p="portfolio.html">03 Portfolio</a></li>
+    <li><a href="contact.html"  data-p="contact.html">04 Contact</a></li>
+    <li><a href="a-propos.html" data-p="a-propos.html">05 À propos</a></li>
+  </ul>
+  <div class="nav-cta-wrap"><a href="contact.html" class="btn-nav">Démarrer un projet</a></div>
+  <button class="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+
+<main>
+
+<div class="page-hero">
+  <div class="badge"><span class="dot"></span>05 À propos</div>
+  <h1>Converscent<br>qui suis-je ?</h1>
+</div>
+
+<!-- INTRO -->
+<div class="wrap">
+  <div class="intro-layout">
+    <div class="intro-text">
+      <p>Je suis un lycéen passionné par l'intelligence artificielle et les technologies conversationnelles. Converscent est né de la conviction que chaque entreprise, quelle que soit sa taille, mérite un agent IA à la hauteur de ses ambitions et de son identité.</p>
+      <p>Mon approche est radicalement différente des solutions génériques : chaque agent est conçu depuis zéro, calibré sur votre ton, votre base de connaissance et vos objectifs précis. Pas de template, pas de raccourci uniquement du sur mesure.</p>
+      <p>L'ambition de Converscent est de démocratiser les agents conversationnels IA en les rendant accessibles, performants et authentiquement adaptés à chaque entreprise qui fait confiance à cette démarche.</p>
+    </div>
+    <div class="skills-box">
+      <h4 style="margin-bottom:14px;">Outils &amp; technologies</h4>
+      <div class="skill-tags">
+        <span class="skill-tag">Botpress</span>
+        <span class="skill-tag">Prompt Engineering</span>
+        <span class="skill-tag">Flux conversationnels</span>
+        <span class="skill-tag">Intégration web</span>
+        <span class="skill-tag">Optimisation API</span>
+      </div>
+      <h4 style="margin-bottom:12px;">Ce que je maîtrise</h4>
+      <ul class="skill-list">
+        <li>Architecture conversationnelle</li>
+        <li>Calibration des instructions IA</li>
+        <li>Intégration sur site web</li>
+        <li>Optimisation des coûts d'usage</li>
+        <li>Design d'expérience client</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<hr style="margin-top:72px;"/>
+
+<!-- STORY -->
+<section class="section">
+  <p class="label">Mon histoire</p>
+  <h2>La vision derrière Converscent.</h2>
+  <div class="story-grid">
+    <div class="story-item">
+      <div class="story-label">
+        <div class="story-num">01 / L'origine</div>
+        <div class="story-cat">Genèse</div>
+      </div>
+      <div class="story-body">
+        <h3>Un constat, une réponse.</h3>
+        <p>Face aux outils génériques et aux agents IA impersonnels qui envahissent le marché, j'ai voulu créer quelque chose de fondamentalement différent : des agents qui parlent vraiment au nom de l'entreprise qui les utilise.</p>
+      </div>
+    </div>
+    <div class="story-item">
+      <div class="story-label">
+        <div class="story-num">02 / L'approche</div>
+        <div class="story-cat">Méthode</div>
+      </div>
+      <div class="story-body">
+        <h3>Sur mesure ou rien.</h3>
+        <p>Chaque agent Converscent est une création unique. La conception commence toujours par une écoute approfondie de votre activité, de vos clients et de vos objectifs jamais par un template préfabriqué.</p>
+      </div>
+    </div>
+    <div class="story-item">
+      <div class="story-label">
+        <div class="story-num">03 / L'ambition</div>
+        <div class="story-cat">Vision</div>
+      </div>
+      <div class="story-body">
+        <h3>Rendre l'IA accessible.</h3>
+        <p>L'objectif de Converscent est de permettre à toutes les entreprises, des plus petites aux plus grandes, de bénéficier d'un agent conversationnel IA performant et authentique sans complexité, sans budget colossal.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr/>
+
+<!-- LEGAL -->
+<section class="section">
+  <p class="label">Légal</p>
+  <h2>Mentions légales.</h2>
+  <div class="legal-grid">
+    <div class="legal-card">
+      <h4>Éditeur du site</h4>
+      <p>Ce site est édité par Converscent, micro-entreprise individuelle en cours de création.<br/>Contact : <a href="mailto:converscent@gmail.com" style="color:var(--accent);text-decoration:none;">converscent@gmail.com</a></p>
+    </div>
+    <div class="legal-card">
+      <h4>Hébergement</h4>
+      <p>Ce site est hébergé par GitHub Pages, service de GitHub Inc. (88 Colin P Kelly Jr St, San Francisco, CA 94107, USA). Site : github.com/converscent</p>
+    </div>
+    <div class="legal-card">
+      <h4>Propriété intellectuelle</h4>
+      <p>Tous les contenus présents sur ce site (textes, visuels, logo, identité de marque) sont la propriété exclusive de Converscent et sont protégés par le droit d'auteur en vigueur.</p>
+    </div>
+    <div class="legal-card">
+      <h4>Données personnelles (RGPD)</h4>
+      <p>Les données collectées via les formulaires de contact sont utilisées uniquement pour répondre à vos demandes. Elles ne sont jamais revendues ni transmises à des tiers. Vous disposez d'un droit d'accès, de rectification et de suppression.</p>
+    </div>
+    <div class="legal-card">
+      <h4>Cookies</h4>
+      <p>Ce site n'utilise aucun cookie de traçage ou d'analyse. Aucune donnée de navigation n'est collectée à des fins publicitaires ou statistiques.</p>
+    </div>
+    <div class="legal-card">
+      <h4>Responsabilité</h4>
+      <p>Converscent s'efforce de maintenir les informations de ce site à jour et exactes. Cependant, la responsabilité de l'éditeur ne saurait être engagée en cas d'inexactitude ou d'omission.</p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<hr/>
+<footer class="footer">
+  <a class="footer-logo" href="index.html">
+    <img src="https://converscent.github.io/Converscent/Logo_Converscent.png" alt="logo"/>
+    Converscent
+  </a>
+  <span class="footer-copy">© 2025 Tous droits réservés</span>
+</footer>
+
+<script src="nav.js"></script>
+</body>
+</html>
