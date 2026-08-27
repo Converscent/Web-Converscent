@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Contact Converscent</title>
+<meta name="description" content="Contactez Converscent pour démarrer votre projet d'agent conversationnel IA."/>
+<link rel="stylesheet" href="style.css"/>
+<style>
+.page-hero { padding: 80px 40px 56px; max-width: 1080px; margin: 0 auto; }
+
+.contact-layout {
+  display: grid;
+  grid-template-columns: 1fr 1.6fr;
+  gap: 40px;
+  align-items: start;
+  margin-top: 40px;
+}
+
+/* Info column */
+.contact-info { display: flex; flex-direction: column; gap: 16px; }
+.info-card {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: var(--r-lg);
+  padding: 28px;
+  transition: border-color var(--ease);
+}
+.info-card:hover { border-color: var(--border-h); }
+.info-icon { font-size: 1.4rem; margin-bottom: 10px; display: block; }
+.info-card a { text-decoration: none; color: var(--text); font-size: 0.88rem; font-weight: 500; }
+.info-card a:hover { color: var(--accent); }
+.info-label { font-size: 0.72rem; color: var(--muted); margin-bottom: 4px; }
+
+/* Form column */
+.form-card { background: var(--bg2); border: 1px solid var(--border); border-radius: var(--r-lg); padding: 40px; }
+.form-card h3 { font-size: 1.1rem; margin-bottom: 24px; }
+
+@media(max-width:768px){
+  .page-hero{padding:60px 20px 40px;}
+  .contact-layout{grid-template-columns:1fr;}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <a class="nav-logo" href="index.html">
+    <img src="https://converscent.github.io/Converscent/Logo_Converscent.png" alt="logo"/>
+    Converscent
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html"    data-p="index.html">01 Accueil</a></li>
+    <li><a href="services.html" data-p="services.html">02 Services</a></li>
+    <li><a href="portfolio.html" data-p="portfolio.html">03 Portfolio</a></li>
+    <li><a href="contact.html"  data-p="contact.html">04 Contact</a></li>
+    <li><a href="a-propos.html" data-p="a-propos.html">05 À propos</a></li>
+  </ul>
+  <div class="nav-cta-wrap"><a href="contact.html" class="btn-nav">Démarrer un projet</a></div>
+  <button class="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+
+<main>
+
+<div class="page-hero">
+  <div class="badge"><span class="dot"></span>04 Contact</div>
+  <h1>Parlons de<br>votre projet.</h1>
+  <p style="max-width:480px;margin-top:14px;font-size:0.97rem;">Une idée, un besoin, une question ? Décrivez votre projet et je vous répondrai dans les plus brefs délais. Chaque agent est unique la conversation commence ici.</p>
+</div>
+
+<div class="wrap" style="padding-bottom:88px;">
+  <div class="contact-layout">
+
+    <!-- Info -->
+    <div class="contact-info">
+      <div class="info-card">
+        <span class="info-icon">✉️</span>
+        <div class="info-label">Email</div>
+        <a href="mailto:converscent@gmail.com">converscent@gmail.com</a>
+      </div>
+      <div class="info-card">
+        <span class="info-icon">📸</span>
+        <div class="info-label">Instagram</div>
+        <a href="https://www.instagram.com/converscent/" target="_blank" rel="noopener">@converscent</a>
+      </div>
+      <div class="info-card" style="background:var(--accent-bg);border-color:var(--accent-br);">
+        <span class="info-icon">🎯</span>
+        <div class="info-label" style="color:var(--accent);">Offre de lancement</div>
+        <p style="font-size:0.82rem;margin-top:4px;">2 places encore disponibles à tarif préférentiel.</p>
+        <p style="font-size:0.78rem;margin-top:6px;color:var(--accent);">✓ Place 1 Prise</p>
+      </div>
+    </div>
+
+    <!-- Form -->
+    <div class="form-card">
+      <h3>Décrire votre projet</h3>
+      <form>
+        <div class="form-group">
+          <label>Nom d'entreprise</label>
+          <input type="text" placeholder="Votre entreprise"/>
+        </div>
+        <div class="form-group">
+          <label>Contact (email ou téléphone)</label>
+          <input type="text" placeholder="contact@entreprise.com"/>
+        </div>
+        <div class="form-group">
+          <label>Pack souhaité</label>
+          <select>
+            <option value="">Sélectionnez un pack</option>
+            <option>Pack Starter 199€</option>
+            <option>Pack Premium 199€ + 39€/mois</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Décrivez votre projet</label>
+          <textarea placeholder="Mon activité est... J'aimerais un agent qui..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Envoyer le message →</button>
+        <p class="form-note">Vous serez recontacté sous 48h.</p>
+      </form>
+    </div>
+
+  </div>
+</div>
+
+</main>
+
+<hr/>
+<footer class="footer">
+  <a class="footer-logo" href="index.html">
+    <img src="https://converscent.github.io/Converscent/Logo_Converscent.png" alt="logo"/>
+    Converscent
+  </a>
+  <span class="footer-copy">© 2025 Tous droits réservés</span>
+</footer>
+
+<script src="nav.js"></script>
+</body>
+</html>
